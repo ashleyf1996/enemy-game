@@ -1,4 +1,5 @@
 from enemy import *
+import random
 
 class Ogre(Enemy):
     def __init__(self,  health_ponts, attack_damage):
@@ -6,3 +7,10 @@ class Ogre(Enemy):
       
     def talk(self):
         print("Ogre is slamming hands")
+
+
+    def special_attack(self):
+        did_special_attack_work = random.random () < 0.20
+        if did_special_attack_work:
+           self.health_points += 4
+           print("Ogre gets angry and increases attack by 4!")
