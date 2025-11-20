@@ -22,4 +22,4 @@ class Enemy:
 
     def get_type_of_enemy(self):
        return self.__type_of_enemy
-    x
+    
